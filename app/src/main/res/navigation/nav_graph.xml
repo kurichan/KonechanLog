@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.konechanlog.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_wordin"
+            app:destination="@id/wordin" />
+        <action
+            android:id="@+id/action_FirstFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.konechanlog.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_storeIt"
+            app:destination="@id/storeIt" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordin"
+        android:name="com.example.konechanlog.Wordin"
+        android:label="fragment_wordin"
+        tools:layout="@layout/fragment_wordin" >
+        <action
+            android:id="@+id/action_wordin_to_storeIt"
+            app:destination="@id/storeIt" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.konechanlog.ItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/storeIt"
+        android:name="com.example.konechanlog.StoreIt"
+        android:label="fragment_store_it"
+        tools:layout="@layout/fragment_store_it" >
+        <argument
+            android:name="mess"
+            app:argType="string" />
+    </fragment>
+</navigation>
