@@ -79,7 +79,7 @@ public class Wordin extends Fragment {
         spinnerCase3 = new SpinnerCase3();
         spinnerCase3.setSpinner(binding.spinner3);
 
-        spinnerCase4 = new SpinnerCaseWith();
+        // spinnerCase4 = new SpinnerCaseWith();
 
         // at first
 
@@ -101,7 +101,7 @@ public class Wordin extends Fragment {
         spinnerCase1.setActivity(this.getActivity());
         spinnerCase2.setActivity(this.getActivity());
         spinnerCase3.setActivity(this.getActivity());
-        spinnerCase4.setActivity(this.getActivity());
+        // spinnerCase4.setActivity(this.getActivity());
 
         //　最初の選択肢を設定
         spinnerCase1.setAdapter();
@@ -174,7 +174,6 @@ public class Wordin extends Fragment {
             }
         });
 
-        // 補足
 
         return binding.getRoot();
 
@@ -201,7 +200,7 @@ public class Wordin extends Fragment {
 
                 // 補足
                 //Editable sel4 = binding.editTextTextMultiLine.getText();
-                String sel4 = (binding.editTextTextMultiLine.equals(null) ? "" : binding.editTextTextMultiLine.toString());
+                String sel4 = (binding.editTextTextAux.equals(null) ? "" : String.valueOf(binding.editTextTextAux.getText()));
                 result.putString("sel4", sel4.toString());
 
                 // The child fragment needs to still set the result on its parent fragment manager

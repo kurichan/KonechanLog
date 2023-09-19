@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="howto_array">
+        <item>｛選択する｝</item>
         <item>銀のスプーン</item>
         <item>チキンN</item>
         <item>朝食</item>
         <item>夜食</item>
-        <item>カリカリA</item>
-        <item>カリカリB</item>
-        <item>カリカリC</item>
-        <item>カリカリD</item>
+        <item>ごちそう35</item>
+        <item>チャオ</item>
+        <item>チャオスープ</item>
+        <item>カリカリ</item>
+        <item>カリカリ</item>
+        <item>カリカリ</item>
     </string-array>
 </resources>

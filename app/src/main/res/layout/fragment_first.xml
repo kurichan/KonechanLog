@@ -36,25 +36,25 @@
         android:id="@+id/button"
         android:layout_width="266dp"
         android:layout_height="84dp"
+        android:layout_marginTop="74dp"
         android:text="@string/wordIn"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintTop_toBottomOf="@+id/button_first" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="266dp"
-        android:layout_height="155dp"
+        android:layout_width="260dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/history"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,10 +39,10 @@ public abstract class SpinnerCase {
 
     public abstract void setAdapter();
 
-
-    public void setAdapter(ArrayAdapter<CharSequence> adapter) {
-        this.adapter = adapter;
-    }
+//    public abstract void setAdapter(ArrayAdapter<CharSequence> adapter);
+//    {
+    //      this.adapter = adapter;
+    //}
 
     public ArrayAdapter<CharSequence> getAdapter() {
         return adapter;

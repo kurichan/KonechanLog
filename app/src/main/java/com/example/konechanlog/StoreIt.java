@@ -144,9 +144,9 @@ public class StoreIt extends Fragment {
             // date & time exchange to string
 
             // write out  here
-           // String outData = tdate.toString() + "," + ttime.toString() + "," +
-            String outData = "2023.01.17" + "," + "22:00:00" + "," +
-                    sel1 + "," + sel2 + "," + sel3 + "," + sel4 + "," +"\n";
+            // フォーマット：誰（sel1）、日付、時刻、何（sel2）、種類（sel3）、補足（sel4）、
+            String outData = sel1 + "," + tdate.getText() + "," + ttime.getText() + "," +
+                    sel2 + "," + sel3 + "," + sel4 + "," + "\n";
 
             DataAccessHelper helper = new DataAccessHelper(getView().getContext());
 

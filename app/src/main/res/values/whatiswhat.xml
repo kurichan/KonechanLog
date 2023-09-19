@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="whatis_arry">
+    <string-array name="whatis_arry2">
+        <item>｛選択する｝</item>
         <item>食事</item>
         <item>うんち</item>
         <item>おしっこ</item>

@@ -1,20 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- -->
+<!--このXMLはRecycleViewで表示する1行のレイアウトでデータを表示する定義-->
+<!-- 表示用　一行　レイアウト-->
+<!---->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:padding="8dp">
 
-    <TextView
-        android:id="@+id/item_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+    <!-- データを表示するテーブルレイアウト -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:stretchColumns="*"
+        tools:ignore="Suspicious0dp">
 
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+
+        <!-- テーブルの各データ行の定義 -->
+        <TableRow>
+            <!-- 1 -->
+            <TextView
+                android:id="@+id/renban"
+                android:padding="3dip" />
+
+            <!-- 2 -->
+            <TextView
+                android:id="@+id/koneORotto"
+                android:padding="3dip" />
+
+            <!-- click point -->
+            <TextView
+                android:id="@+id/my_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">>"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <!-- 3 -->
+            <TextView android:id="@+id/hizuke" />
+            <!--                android:padding="3dip" />-->
+        </TableRow>
+
+        <TableRow>
+            <!-- 4 -->
+            <TextView android:id="@+id/jikoku" />
+            <!--                android:padding="3dip" />-->
+        </TableRow>
+
+        <TableRow>
+            <!-- 5 -->
+            <TextView android:id="@+id/dare" />
+            <!--                android:padding="3dip" />-->
+
+            <!-- 6 -->
+            <TextView android:id="@+id/nani" />
+            <!--                android:padding="3dip" />-->
+
+            <!-- 7 -->
+            <TextView android:id="@+id/shurui" />
+            <!--            android:padding="3dip" />-->
+        </TableRow>
+
+        <TableRow>
+            <!-- 8 -->
+            <TextView android:id="@+id/hosoku" />
+        </TableRow>
+
+
+    </TableLayout>
+
 </LinearLayout>
