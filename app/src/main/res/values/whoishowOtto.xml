@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="howto_array2">
+        <item>｛選択する｝</item>
+        <item>朝食</item>
+        <item>夕食</item>
+        <item>即席ラーメン</item>
+        <item>マロード</item>
+        <item>スシロー</item>
+        <item>チャーハン餃子</item>
+        <item>カリカリC</item>
+        <item>カリカリD</item>
+    </string-array>
+</resources>

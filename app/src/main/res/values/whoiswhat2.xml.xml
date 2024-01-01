@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whatis_arry">
+        <item>｛選択する｝</item>
+        <item>食事</item>
+        <item>運動</item>
+        <item>散歩</item>
+    </string-array>
+</resources>

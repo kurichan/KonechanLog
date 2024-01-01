@@ -15,14 +15,12 @@ public class PlaceholderContent {
 
 
     /* PlaceholderItem　変換　Before */
-
     public static List DATALIST = new ArrayList();
+
     /**
      * An array of sample (placeholder) items.
      */
     public static List<PlaceholderItem> ITEMS = new ArrayList<PlaceholderItem>();
-
-    private static int COUNT = 2;
 
     public static void PlaceholderContent(List list) {
 
@@ -46,8 +44,6 @@ public class PlaceholderContent {
 
         return new PlaceholderItem(position);
     }
-
-
     /*
      * ******************************************************
      * A placeholder item representing a piece of content ***
@@ -66,7 +62,7 @@ public class PlaceholderContent {
         public final String shurui; // 種類
         public final String hosoku; // 補足
 
-        private  PlaceholderItem(int position) {
+        private PlaceholderItem(int position) {
 
             // リストから項目1行を取り出す
             String temp = DATALIST.get(position).toString();
@@ -103,7 +99,7 @@ public class PlaceholderContent {
 
         // 時刻
         public String getJikokuBySymbol() {
-            return jikoku.toString();
+            return jikoku;
         }
 
         // 誰
